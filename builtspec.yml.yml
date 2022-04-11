@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-version:
+      nodeja: 12
+  pre_build:
+    commands:
+    -npm install
+  build:
+    -npm run build
+artifacts:
+  files:
+    - '**/*'
